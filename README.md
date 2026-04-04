@@ -8,9 +8,10 @@
 
 ```bash
 .
+├── .env                # For MAPBOX_TOKEN
 ├── README.md
 ├── weathernews_curl.sh
-└── weather_parser.py # will be added
+└── weather_parser.py   # will be added
 ```
 
 
@@ -19,22 +20,10 @@
 You need to set Mapbox token as an environment variable in order to use the script.
 The token can be obtained by signing up at [Mapbox Console](https://console.mapbox.com/account/access-tokens/).
 
-Then, you can set the environment variable in your terminal:
+Then, you can put the token in the `.env` file in the form of:
 
-```bash
-export MAPBOX_TOKEN='YOUR TOKEN'
-```
-
-or to make it permanent, you can add the line to your `~/.bashrc` or `~/.zshrc` file:
-
-```bash
-# For bash
-echo "export MAPBOX_TOKEN='YOUR TOKEN'" >> ~/.bashrc
-```
-
-```bash
-# For zsh
-echo "export MAPBOX_TOKEN='YOUR TOKEN'" >> ~/.zshrc
+```env
+MAPBOX_TOKEN='YOUR TOKEN'
 ```
 
 Clone the repository to your local machine.
